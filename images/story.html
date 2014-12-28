@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Story Mode</title>
+    <link rel="stylesheet" href="../css/final_assignment.css" />
+
+</head>
+<body onload="init()" style="background-image: url('../images/story-background.jpg'); background-size:50%;background-repeat: repeat-x; ">
+<section id="gamesec" class="scene">
+<canvas id="story"  onmouseover="fadein(this)" onmouseout="fadeout(this)"   width="1300" height="200" style="border: 2px solid black;"></canvas>
+
+
+
+    <audio id="theAudio">
+        <source src="../media/story-background.mp3"  type="audio/mp3">
+    </audio>
+
+
+
+<input type="button" class="buttonstory" value="Menu!" onclick="menu()">
+
+
+<script src="../javascript/jquery-2.0.0.min.js"></script>
+<script src="../javascript/story.js"></script>
+</body>
+</html>
